@@ -28,11 +28,10 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- sharding -->
     <dependency>
-      <groupId>org.apache.shardingsphere</groupId>
-      <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-      <version>4.0.0-RC1</version>
+      <groupId>com.dangdang</groupId>
+      <artifactId>sharding-jdbc-core</artifactId>
+      <version>1.5.4</version>
     </dependency>
     <!-- mybatis-plus -->
     <dependency>
@@ -44,7 +43,7 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>druid-spring-boot-starter</artifactId>
-      <version>1.1.14</version>
+      <version>1.1.10</version>
     </dependency>
     <!-- mysql -->
     <dependency>
