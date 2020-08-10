@@ -119,6 +119,8 @@ public class ShardingJdbcConfig {
    * @return 分表策略
    */
   public TableShardingStrategy userTableShardingStrategy() {
+    // 双片分表
+//    orderTableRuleConfig.setTableShardingStrategyConfig(new ComplexShardingStrategyConfiguration("user_id,order_id", MyComplexShardingAlgorithm.class.getName()));
     return new TableShardingStrategy
         ("user_id", new UserSingleKeyTableShardingAlgorithm());
   }
