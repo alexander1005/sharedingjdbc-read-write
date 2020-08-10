@@ -6,8 +6,8 @@ mybatis-plus:
   mapper-locations: classpath:/mapper/*Dao.xml
 
 master:
-  driver-class-name: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://192.168.50.221:3339/sharding_0?serverTimezone=GMT%2B8&useSSL=false
+  driver-class-name: com.mysql.cj.jdbc.Driver
   username: root
   password: 123456
 master1:
