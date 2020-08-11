@@ -126,9 +126,7 @@ public class ShardingJdbcConfig {
   }
 
   @Bean
-  @Primary
   public DataSource shardingDataSource(DataSourceRule dataSourceRule) throws SQLException {
-    DataSource dataSource = new ShardingDataSource(shardingRule(dataSourceRule));
-    return dataSource;
+    return new ShardingDataSource(shardingRule(dataSourceRule));
   }
 }
