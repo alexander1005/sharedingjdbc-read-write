@@ -7,4 +7,8 @@
     values (#{userId,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR}, #{age,jdbcType=BIGINT})
   </insert>
 
+  <select id="list" resultType="com.ltz.test.model.Goods">
+    SELECT id,user_id userId,`name`,age FROM t_user
+  </select>
+
 </mapper>

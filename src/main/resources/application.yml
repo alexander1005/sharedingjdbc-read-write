@@ -1,3 +1,4 @@
+
 spring:
   main:
     allow-bean-definition-overriding: true
@@ -15,3 +16,5 @@ master1:
   url: jdbc:mysql://localhost:3306/sharding_1?serverTimezone=GMT%2B8&useSSL=false
   username: root
   password: root
+server:
+  port: 8094
